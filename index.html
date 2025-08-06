@@ -7,57 +7,135 @@
     <title>Drumming Experience (from a noob)</title>
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
+
+    <!--Here for testing style-->
+    <style>
+    </style>
 </head>
 
 <body>
     <header>
         <h1>Main Topic</h1>
     </header>
-    <nav> <!--menu system-->
+    <nav id="navigation-bar">
         <!--hamburger icon for mobile-->
-        <button id="hamIcon">Open Menu</button>
+        <button id="navIcon">Open Menu</button>
         <ul id="uppmenu">
-            <li><button id="genre-pa">Knowing The Drums</button></li>
-            <li><button id="genre-parts">game</button></li>
+            <li><button id="genre-parts">Knowing The Drums</button></li>
             <li><button id="genre-notate">Reading The Score</button></li>
             <li><button id="genre-techs">Playing The Music</button></li>
             <li><button id="genre-exams">Exams (ew)</button></li>
+            <li><button id="genre-game">Try It Out!</button></li>
         </ul>
     </nav>
     <main id="pagecontainer">
         <section class="page" id="page1">
-            <button id="leftBtn">Left</button>
-            <button id="rightBtn">Right</button>
-            <button id="upBtn">Up</button>
-            <button id="downBtn">Down</button>
-            <button id="resetBtn">Reset</button>
-            <div id="ball">Ball</div>
-        </section>
-        <section class="page" id="page5">
             <h1>Drum Types</h1>
             <p>There's many kinds of drums you can play</p>
             <p>Though we will only cover the main ones, but if you want to know, your drum set can look like this</p>
-            <img src="./images/drumset_stock.jpg" alt="Stock Image" width="100"><img src="./images/drumset_reddit.jpg"
-                alt="Reddit" width="100">
+            <div class="drumset-examples">
+                <img src="./images/drumset_stock.jpg" alt="Stock Image"><img src="./images/drumset_reddit.jpg"
+                    alt="Reddit">
+            </div>
             <p>Or this</p>
-            <img src="./images/drumset_overdone.jpg" alt="What the hell" width="100"><img
-                src="./images/drumset_toomuch.jpg" alt="What the fuck" width="100">
+            <div class="drumset-examples">
+                <img src="./images/drumset_overdone.jpg" alt="What the hell"><img src="./images/drumset_toomuch.jpg"
+                    alt="What the fuck">
+            </div>
             <br><br>
-            <div class="drum" id="snare"></div>
-            <div class="drum" id="high"></div>
-            <div class="drum" id="mid"></div>
-            <div class="drum" id="floor"></div>
-            <div class="drum" id="kick"></div>
-            <div class="cymbal" id="crash"></div>
-            <div class="cymbal" id="hihat"></div>
-            <div class="cymbal" id="ride"></div>
-
+            <section style="height: 80%;">
+                <div id="drumset-example">
+                    <img src="" alt="Drumset Example" usemap="#guide-set">
+                    <map name="guide-set">
+                    </map>
+                </div>
+                <div id="drumset-info">
+                    <p class="info-drum" id="info-snare">The snare drum is the most basic part of the drum, it is the
+                        part you will learn to play first, starting with your single stroke rolls. It makes a crisp and
+                        notable sound, caused by pressing many beads at the bottom of it via a wire that gets tightened
+                        to press it up, somewhere between hitting sand, an empty metal pot, and paper. It also has a
+                        switch at the side to "off" it which will take it back to sounding like the toms.</p>
+                    <p class="info-drum" id="info-high">The high tom produces a much higher pitched sound than any other
+                        drum, like hitting an empty plastic bottle. Seen as much as the floor tom but less used as a
+                        boom and more used for its nice sound.</p>
+                    <p class="info-drum" id="info-mid">Less seen compared to the high tom and floor tom, it's at the top
+                        right and is really mostly used in drum fills and solos.</p>
+                    <p class="info-drum" id="info-floor">A commonly used drum in rock songs, pop songs, sometimes even
+                        orchestral arrangements. Its big heavy bass sound meshes well when played together with a bass
+                        kick drum.</p>
+                    <p class="info-drum" id="info-kick">The second drum one will be taught to play. Alternatively known
+                        as the bass drum, the kick makes a loud boom when stepping on its pedal, as it forces a
+                        hammer/mallet to whack the drum. It's used a lot alongside the snare and hi-hat in Rock songs
+                        and way too much for Metal and
+                        DnB songs.</p>
+                    <p class="info-drum" id="info-crash">Very well known. The crash cymbal is something you've
+                        definitely heard before, it is THE cymbal. Placed usually at the beginning of sections or even
+                        just bars, it has a fun splash to it that can be played with. Two crash cymbals can be found on
+                        most drum sets.</p>
+                    <p class="info-drum" id="info-hihat">A simple yet vital cymbal, this is the third part a new drummer
+                        will likely be taught. It has two parts, the pedal and the cymbal. Between closing and opening
+                        the cymbal depending on if you step on the pedal, you will either get a nice tapping noise or
+                        sticky metal that hits against each other, unless it opens too much, then you should probably
+                        set the default height of it lower.</p>
+                    <p class="info-drum" id="info-ride">Commonly used in jazzy, swingy songs, or sometimes blues, the
+                        ride cymbal has a nice resounding echo to it even after a light hit. This is used like an
+                        alternative hi-hat when you need a different vibe. Hitting the protrusion at the center will
+                        cause it to produce a sound akin to a cow-bell.</p>
+                </div>
+            </section>
         </section>
         <section class="page" id="page2">
+            <p class="info-note" id="info-semibrief"></p>
+            <p class="info-note" id="info-minim"></p>
+            <p class="info-note" id="info-crotchet"></p>
+            <p class="info-note" id="info-quaver"></p>
+            <p class="info-note" id="info-semi"></p>
 
         </section>
         <section class="page" id="page3">
             <img src="./images/drum sticks.jpg" width="300">
+            <ul>
+                <p class="info-tech" id="info-single">The most basic technique. You simply go "Right, Left, Right,
+                    Left,..",
+                    hitting the drum normally with alternating hands. This is helpful when combined with other
+                    techniques
+                    just to practice them. Also do practice with this when getting used to higher speeds.</p><br>
+                <p class="info-tech" id="info-double">The Single Stroke Roll, but you alternate every 2 hits. Right
+                    right,
+                    left left. Also better when combined with other techniques but benefits quite a bit from learning to
+                    play this consistently fast</p><br>
+                <p class="info-tech" id="info-ghost">Playing a Ghost Note on a drum is when you hit the drum much
+                    lighter
+                    and softer compared to normal. It shouldn't be completely silent, but just soft. It doesn't have to
+                    be
+                    barely audible either, as long as it is lighter and like a "ghost" compared to the other notes .</p>
+                <br>
+                <p class="info-tech" id="info-flam">This is played with two sticks. Hold one like normal and the other
+                    barely above the drum. Then, use both sticks to hit the drum. Since one is much lower than the
+                    other, it will produce a ghost note, while the other is normal. This produces two hits in rapid
+                    succession, with the first being just noticeable.</p>
+                <br>
+                <p class="info-tech" id="info-drag">A bit more advanced than the flam, read that one first. You simply
+                    do
+                    your light hits twice before the normal stroke. Don't let the stick tap or bounce too much, only
+                    two.
+                </p><br>
+                <p class="info-tech" id="info-roll">A standard technique. Loosen your grip against your drumsticks so
+                    that
+                    they can freely pivot while you are holding them. You should be able to swing them just by flicking
+                    your
+                    wrist. When you can on both, make your stick drop down and bounce onto the snare before catching it,
+                    most likely you performed a drag. A roll is simply throwing your hands down with that loose grip to
+                    keep a steady flow of fast hits.</p><br>
+                <p class="info-tech" id="info-cross">Hold your drumstick, hands should be closer toward the bottom.
+                    Fingers curling and ON the stick rather than wrapped around it. Then, rest your wrist against the
+                    snare, press down your wrist while raising your fingers and the stick, before slamming your palm
+                    down and making a clicking noise on the snare.</p><br>
+                <p class="info-tech" id="info-rim">The trickiest technique in this catalog. It's simple to understand
+                    but hard to execute, you need to hit the drum and the rim of said drum at the same time. To make it
+                    easier, the drum should be hit with the head of the stick, the rounded tip. The neck, the conical
+                    section of the stick should strike the rim.</p>
+            </ul>
         </section>
         <section class="page" id="page4">
             <div class="type4" id="rockschool">
@@ -67,6 +145,20 @@
                 <img src="./images/yamaha_logo.jpg" width="500">
             </div>
         </section>
+        <section class="page" id="page5">
+            <button id="start-minigame">Quiz Yourself</button>
+            <div id="note-game-screen"></div>
+            <section id="drum-minigame">
+                <div class="drum" id="snare"></div>
+                <div class="drum" id="high"></div>
+                <div class="drum" id="mid"></div>
+                <div class="drum" id="floor"></div>
+                <div class="drum" id="kick"></div>
+                <div class="drum cymbal" id="hihat"></div>
+                <div class="drum cymbal" id="crash"></div>
+                <div class="drum cymbal" id="ride"></div>
+            </section>
+        </section>
     </main>
 </body>
 
@@ -75,3 +167,13 @@
 </footer>
 
 </html>
+
+
+<section class="page" id="page1">
+    <button id="leftBtn">Left</button>
+    <button id="rightBtn">Right</button>
+    <button id="upBtn">Up</button>
+    <button id="downBtn">Down</button>
+    <button id="resetBtn">Reset</button>
+    <div id="ball">Ball</div>
+</section>
